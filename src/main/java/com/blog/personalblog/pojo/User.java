@@ -1,40 +1,24 @@
 package com.blog.personalblog.pojo;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.Date;
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
-    private int id;
+    private int userId;
     private String userName;
     private String userPwd;
-    private int userAge;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getUserPwd() {
-        return userPwd;
-    }
-
-    public void setUserPwd(String userPwd) {
-        this.userPwd = userPwd;
-    }
-
-    public int getUserAge() {
-        return userAge;
-    }
-
-    public void setUserAge(int userAge) {
-        this.userAge = userAge;
-    }
+    private String userEmail;
+    private String userPhone;
+    private String userHobby;
+    private String userSkill;
+    private String userWork;
+    private Date userCreateTime;
+    private Date userModifyTime;
+    private String userDescription;
+    private String userAddress;
 }

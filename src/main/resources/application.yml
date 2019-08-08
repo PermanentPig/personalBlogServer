@@ -4,3 +4,9 @@ spring:
     url: jdbc:mysql://localhost:3306/myblog?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     username: root
     password: 123456
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+logging:
+  config: classpath:log4j2.xml
